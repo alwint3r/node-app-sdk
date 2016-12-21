@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-  HTTP: require('./http')
+  HTTP: require('./http'),
+  gRPC: require('./grpc')
 };

@@ -1,5 +1,4 @@
 var should = require('should');
-var http = require('http');
 var nock = require('nock');
 
 var ttn = require('..');

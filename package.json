@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "npm run compile && mocha --bail",
+    "proto": "curl https://raw.githubusercontent.com/TheThingsNetwork/ttn/develop/api/handler/handler.proto -o proto/handler.proto",
     "compile": "babel src --presets babel-preset-es2015 --out-dir dist",
     "prepublish": "npm run compile",
     "push": "git push --follow-tags"
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/TheThingsNetwork/node-app-sdk#readme",
   "tonicExampleFilename": "dist/example.js",
   "dependencies": {
+    "grpc": "^1.0.1",
     "mqtt": "^2.1.3",
     "request": "^2.79.0"
   },
