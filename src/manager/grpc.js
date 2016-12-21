@@ -21,11 +21,11 @@ function gRPC(options) {
   }
 
   if (options.key) {
-    metadata.add('authorization', 'Key ' + options.key);
+    metadata.add('key', options.key);
   }
 
   if (options.token) {
-    metadata.add('authorization', 'Bearer ' + options.token);
+    metadata.add('bearer', options.token);
   }
 
   return new handler.ApplicationManager(server, metadata);
