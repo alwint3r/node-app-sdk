@@ -1,7 +1,10 @@
 'use strict';
 
-const Client = require('./client');
+const data = require('./data');
 
 module.exports = {
-  Client: Client
+  Client: data.MQTT, // DEPRECATED
+  
+  data: data,
+  manager: require('./manager')
 };
